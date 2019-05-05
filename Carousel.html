@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./css/Carousel.css" />
+	<title>3D轮播图</title>
+</head>
+<body>
+	<div id="wrp">
+		<img src="./img/timg9.jpg" alt="" />
+		<img src="./img/timg14.jpg" alt="" />
+		<img src="./img/timg7.jpg" alt="" />
+		<img src="./img/timg22.jpg" alt="" />
+		<img src="./img/timg23.jpg" alt="" />
+	</div>
+	
+	<script src="./js/jquery.js"></script>
+    <script src="./js/Carousel.js"></script>
+    <script>
+    	
+    	var options = {
+    		index:0,  //第几张图片
+    		start:true,  //是否自动轮播
+    		interval:1000  //每隔多久运动一次
+    	}
+    	
+    	$('#wrp').carousel(options);
+    	
+    </script>
+</body>
+</html>
